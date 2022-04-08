@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <title>Work Day Scheduler</title>
 </head>
 
@@ -22,10 +23,74 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>9am</span>
+      </div>
+      <textarea id='09' class='col-10 col-sm-10'></textarea>
+      <button id='save9' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>10am</span>
+      </div>
+      <textarea id='10' class='col-10 col-sm-10'></textarea>
+      <button id='save10' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>11am</span>
+      </div>
+      <textarea id='11' class='col-10 col-sm-10'></textarea>
+      <button id='save11' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>12pm</span>
+      </div>
+      <textarea id='12' class='col-10 col-sm-10'></textarea>
+      <button id='save12' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>1pm</span>
+      </div>
+      <textarea id='13' class='col-10 col-sm-10'></textarea>
+      <button id='save13' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>2pm</span>
+      </div>
+      <textarea id='14' class='col-10 col-sm-10'></textarea>
+      <button id='save14' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>3pm</span>
+      </div>
+      <textarea id='15' class='col-10 col-sm-10'></textarea>
+      <button id='save15' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>4pm</span>
+      </div>
+      <textarea id='16' class='col-10 col-sm-10'></textarea>
+      <button id='save16' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
+    <div class="row">
+      <div class="hour col-12 col-sm-1 text-center">
+        <span>5pm</span>
+      </div>
+      <textarea id='17' class='col-10 col-sm-10'></textarea>
+      <button id='save17' class='saveBtn col col-sm-1'><i class='fa fa-save'></i></button>
+    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
