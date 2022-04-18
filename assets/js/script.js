@@ -1,4 +1,6 @@
-// TODO: use moment to show current hour and change colors based on past/present/future
+// use moment to show current hour and change colors based on past/present/future
+var time = moment();
+$("#currentDay").text(time.format("dddd, MMMM Do YYYY, h:mm"));
 
 // setting the current time to check against time on the table
 var currentTime = moment().format("HH");
@@ -12,7 +14,7 @@ for (let i = 0; i < textArea.length; i++) {
     console.log(element.getAttribute("id"));
     tableTime = element.getAttribute("id");
 
-    // TODO: change class of table row depending on comparison
+    // change class of table row depending on comparison
     if (currentTime > tableTime) {
         // add past class to these
         $(`#${tableTime}`).addClass("past")
@@ -28,7 +30,7 @@ for (let i = 0; i < textArea.length; i++) {
 }
 
 var text = "";
-// TODO: save typed stuff to local storage
+// save typed stuff to local storage
 $(".saveBtn").on("click", function (event){
     // console.log(event.target.previousElementSibling.id)
     text = $(`#${event.target.previousElementSibling.id}`).val();
@@ -36,10 +38,12 @@ $(".saveBtn").on("click", function (event){
     console.log("success", text)
 });
 
+var innerText = "";
 // TODO: shows the things in local storage on screen
 $(document).ready(function() {
     for (let i = 09; i < 17; i++) {
-        var innerText = $(`#${i}`)
+        innerText = $(`#${i}`)
+        // console.log(innerText)
         innerText.text(localStorage.getItem(`save${i}`))
     }
 })
